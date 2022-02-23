@@ -1,0 +1,379 @@
+@import "viriable";
+@import "mixins";
+
+@media screen and (max-width: 1600px){}
+@media screen and (max-width: 1418px){
+}
+
+@media screen and (max-width: 1364px){
+  .container-global{
+    width: 92%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .container-global{
+    width: 100%;
+  }
+  .text_banner{
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 1100px){
+  .time{
+    display: $none;
+  }
+}
+@media screen and (max-width: 991px){
+  .telBlock{
+    display: $none;
+  }
+  .d_flex{
+    flex-wrap: wrap;
+  }
+
+  .d-flex_fons{
+    display: none;
+  }
+
+  .dPost{
+    display: block;
+    margin-top: 14px;
+    padding: 18px 16px 0px 16px ;
+  }
+
+  .text_banner2{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .img_none{
+    @include img_none()
+  }
+
+  .none-text{
+    margin: 0px 0px 0px 0px;
+    line-height: 0;
+  }
+
+  .none-text > p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #297FFF;
+  }
+
+  .banner_images > img{
+    @include banner_moto_images();
+    margin-left: 70px;
+  }
+
+  .banner_images_2 > img{
+    @include banner_moto_images();
+    margin-left: 70px;
+  }
+  .banner_images_3 > img{
+    @include banner_moto_images();
+    margin-left: 90px;
+  }
+
+  .text_moto{
+    margin: -30px 0px 0px 20px;
+    line-height: 1;
+  }
+
+  .pb-date{
+    display: block;
+  }
+
+  .slec{
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 816px){
+  .btnBlock{
+    display: $block;
+  }
+  .text{
+    display: $none;
+  }
+
+  .text > a{
+    color: white; 
+  }
+  
+  .panel{
+    display: $block;
+  }
+
+  .panelFlex{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+
+  .time{
+    display: $block;
+  }
+
+  .text_banner2{
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .banner_images_3{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+    width: 240px;
+    border-radius: 0px 20px;
+  }
+  .banner_images > img{
+    @include banner_moto_images();
+    margin-left: 40px;
+  }
+  .banner_images_2 > img{
+    @include banner_moto_images();
+    margin-left: 40px;
+  }
+  .banner_images_3 > img{
+    @include banner_moto_images();
+    margin-left: 40px;
+  }
+
+  .date_select{
+
+    flex-wrap: wrap;
+  }
+
+  .date_options{
+    display: none;
+  }
+
+  .date_options2{
+    display: block;
+  }
+
+  .slec{
+    padding-right: 182px;
+  }
+  .bgBtn{
+    width: 280px;
+  }
+
+  .date > div {
+    width: 280px;
+  }
+
+
+}
+
+@media screen and (max-width: 640px){
+  .slec{
+    padding-right: 125px;
+  }
+  .bgBtn{
+    width: 94%;
+  }
+
+  .date > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .panelFlex{
+    padding-left: 0px;
+  }
+
+  .text_banner2{
+    width: 355px;
+  }
+
+  .telBtn{
+    display: $none;
+  }
+
+  .text_moto > h4{
+    display: none;
+  }
+
+  .text_moto > p{
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .banner_images_3{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+    width: 200px;
+    border-radius: 0px 20px;
+  }
+
+  .banner_images > img{
+    @include banner_moto_images();
+    margin-left: 5px;
+  }
+  .banner_images_2 > img{
+    @include banner_moto_images();
+    margin-left: 5px;
+  }
+  .banner_images_3 > img{
+    @include banner_moto_images();
+    margin-left: 5px;
+  }
+
+  .slec{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 544px){
+  .date_select{
+    display: block;
+  }
+
+  .bgBtn{
+    width: 100%;
+  }
+
+  .date > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px){
+  .panelFlex{
+    display: block;
+    text-align: center;
+}
+  .panelFlex > li{
+    border-bottom: 1px thick $color;
+  }
+
+  .time{
+    display: $none;
+  }
+
+  .telBtn2{
+    display: block;
+  }
+
+
+  .banner_images{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 2, 0px);
+    width: 144px;
+    height: 144px;
+  }
+
+  .banner_images_2{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_3.svg", 3, -120px);
+    width: 144px;
+    height: 144px;
+  }
+
+  .banner_images_3{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+    width: 144px;
+    height: 144px;
+  }
+
+  .banner_images > img{
+    @include banner_moto_images();
+    width: 120px;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .banner_images_2 > img{
+    @include banner_moto_images();
+    width: 120px;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .banner_images_3 > img{
+    @include banner_moto_images();
+    width: 120px;
+    height: 100px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 415px){
+
+  .dPost{
+    padding: 0px;
+  }
+  .banner_images{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 2, 0px);
+    width: 134px;
+    height: 134px;
+  }
+
+  .banner_images_2{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_3.svg", 3, -120px);
+    width: 134px;
+    height: 134px;
+  }
+
+  .banner_images_3{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+    width: 134px;
+    height: 134px;
+  }
+
+  .text_banner2{
+    width: 220px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 324px){
+  .dPost{
+    padding: 0px;
+  }
+
+  .banner_images{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 2, 0px);
+    width: 104px;
+    height: 144px;
+  }
+
+  .banner_images_2{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_3.svg", 3, -120px);
+    width: 104px;
+    height: 144px;
+  }
+
+  .banner_images_3{
+    @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+    width: 104px;
+    height: 144px;
+  }
+
+  .banner_images > img{
+    @include banner_moto_images();
+    width: 110px;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .banner_images_2 > img{
+    @include banner_moto_images();
+    width: 110px;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .banner_images_3 > img{
+    @include banner_moto_images();
+    width: 104px;
+    height: 100px;
+    margin-left: 0px;
+  }
+
+  .text_moto > p{
+    margin-left: -10px;
+  }
+}

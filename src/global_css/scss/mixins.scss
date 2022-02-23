@@ -1,0 +1,21 @@
+@mixin banner_images($img, $index, $left){
+  background-image: url($img);
+  background-repeat: no-repeat;
+  width: 316px;
+  height: 207px;
+  margin-left: $left;
+  z-index: $index;
+}
+
+@mixin banner_moto_images(){
+  width: 170px;
+  height: 150px;
+  margin-left: 110px;
+}
+
+@mixin img_none(){
+  width: 54%;
+  height: 190px;
+  float: right;
+  margin-right: 30px;
+}

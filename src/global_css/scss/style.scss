@@ -1,0 +1,221 @@
+@import "viriable";
+@import "mixins";
+
+li{
+  list-style: $none;
+}
+
+.container-global{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.panel{
+  display: $none;
+}
+
+.logo{
+  width: 80px;
+  margin-left: 10px;
+}
+
+#tel-num{
+  color: $color;
+  font-weight: bold;
+}
+
+.dflex{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item > a{
+  color: black;
+}
+
+.fonsMargin{
+  margin-top: 16px;
+}
+
+.btnBlock{
+  display: $none;
+}
+
+.telBtn2{
+  display: $none;
+}
+
+.fons_banner{
+  background-color: $bgColor;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.d_flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_banner{
+  display: flex;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.banner_images{
+  @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 2, 0px);
+}
+
+.banner_images_2{
+  @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_3.svg", 3, -120px);
+}
+
+.banner_images_3{
+  @include banner_images("https://bikepark.ae/local/templates/bike_template/img/gift-item_0.svg", 5, -120px);
+  width: 283px;
+  border-radius: 0px 20px;
+}
+
+.banner_images > img{
+  @include banner_moto_images()
+}
+
+.banner_images_2 > img{
+  @include banner_moto_images()
+}
+
+.banner_images_3 > img{
+  @include banner_moto_images();
+}
+
+.d-flex_fons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_moto{
+  margin: -30px 0px 0px 58px;
+  line-height: 1;
+}
+
+.text_moto > p{
+  font-size: 24px;
+  font-weight: bold;
+  color: #297FFF;
+}
+
+.dPost{
+  display: none;
+}
+
+
+.rad{
+  border-bottom-left-radius: 20px;
+  border-start-start-radius: 20px
+}
+
+.date_select{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 67px;
+  padding-bottom: 35px;
+}
+
+.date > div {
+  background: white;
+}
+
+.bgBtn{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 222px;
+  height: 54px;
+  border-radius: 5px;
+}
+
+.bgBtn > button{
+  display: block;
+  width: 124px;
+  height: 54px;
+  align-self: center;
+  font-size: 18px;
+}
+
+.activeBtn{
+  background-color: #3E80F7;
+  color: white;
+  width: 110px!important;
+  margin-left: 2px;
+  height: 46px!important;
+  border-radius: 20px;
+}
+
+.slec{
+  padding-right: 124px;
+  height: 56px;
+}
+
+.pb-date{
+  margin-bottom:  8px;
+}
+
+.text_date{
+  color: #ABB1C5;
+}
+
+.date_options2 {
+  display: none;
+}
+
+.bike_flex{
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.bike_img{
+  width: 259px;
+  height: 137px;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-bike{
+  width: 260px;
+  height: 142px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+  border-radius: 30px;
+  padding: 26px;
+}
+.bg-bike > h5{
+  padding-top: 20px;
+}
+
+.info_bike{
+  font-weight: bold;
+  color: #297FFF;
+  font-size: 22px;
+}
+
+.bike_btn{
+  color: #297FFF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bike_flex > div{
+  margin-right: 10px;
+}
+
+.btn_search{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 86px 10px 86px;
+  margin-top: 42px;
+  margin-bottom: 46px;
+}
